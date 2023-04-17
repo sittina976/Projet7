@@ -1,0 +1,122 @@
+.page-card{
+    font-size: 14px;
+  }
+  
+  .page-card .hero-image{
+    object-fit: cover;
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .page-card .top-row {
+    margin-bottom: 15px;
+  }
+  
+  .page-card .host-avatar .name{
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  
+  .page-card .host-avatar img{
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+  }
+  
+  
+  .page-card .middle-row{
+    margin-bottom: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .page-card .tags{
+    gap: 10px;
+  }
+  
+  .page-card .tags .tag{
+    background: var(--primary-color);
+    color: white;
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 10px;
+  }
+  
+  .page-card .stars .star{
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20px;
+    height: 20px;
+    color: white;
+    padding: 0px 14px;
+    border-radius: 64px;
+  }
+  
+  .page-card .stars .star.gray{
+    background-image: url('/src/assets/star-gray.png');
+  }
+  .page-card .stars .star.red{
+    background-image: url('/src/assets/star-red.png');
+  }
+  
+  .page-card-second{
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-description{
+    display: flex;
+    flex-direction: row;
+  }
+  .top-row{
+    display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  
+  .article.half{
+    width: 48%;
+  }
+
+
+
+  @media  screen and (max-width : 550px) {
+    .page-card-second{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .page-card .hero-image{
+      
+        height: 225px;
+        
+      }
+      
+      .page-card .middle-row{
+        margin-bottom: 15px;
+        flex-direction: row;
+        flex-direction: row-reverse;
+      }
+      
+      .page-card .tags .tag{
+        font-size: 10px;
+        padding: 2px 16px;
+      }
+      
+      .stars{
+        margin-left: 0;
+      }
+      
+      .card-description {
+        flex-direction: column;
+      }
+      
+      .article.half{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+  }

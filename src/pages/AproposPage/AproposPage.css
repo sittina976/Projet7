@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    flex-direction: column;
+  
+    justify-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+article {
+    text-align: -webkit-center;
+    margin-bottom: 20px
+  }
+  .photo {
+    margin-left: 50px;
+    width: 95%;
+  border-radius: 25px;
+  margin: 0 auto;
+  }
+  .detail {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+  }  
+
+ 
+
+@media  screen and (max-width : 550px) {
+  .photo{
+    height: 225px;
+  }
+}
