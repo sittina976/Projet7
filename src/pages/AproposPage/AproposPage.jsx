@@ -26,12 +26,14 @@ console.log(datas);
       <article>
        {datas.map((data) => {
         return (
+        <div key={data.id} >
         <Article 
          className="detail"
           title={data.title}
           content={data.content}
           direction="up" 
         />
+        </div>
         )
        
        })}

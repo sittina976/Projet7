@@ -81,6 +81,17 @@
     width: 48%;
   }
 
+  .bad-id{
+
+  
+     font-size: 25px;
+     padding: 50px;
+    text-align: center;
+    height: 600px;
+  }
+
+
+
 
 
   @media  screen and (max-width : 550px) {
