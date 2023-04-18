@@ -16,9 +16,12 @@ export default function Caroussel({ slides }) {
 
 	return (
 		<section id="carrousel-body">
+			
+{/* Affichage des flèches seulement si length > 1 */}
+
 			{length > 1 && (
 				<img
-					src={left} //Affichage des flèches seulement si length > 1
+					src={left} 
 					alt="gauche"
 					onClick={prevSlide}
 					className="leftArrow"
@@ -49,6 +52,8 @@ export default function Caroussel({ slides }) {
 					)}
 				</div>
 			))}
+		
 		</section>
+		
 	);
 }

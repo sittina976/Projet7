@@ -16,18 +16,17 @@ function CardPage() {
       if (card){
         setCard(card);
         setSlides(card.pictures);
-      }
+      } 
     }
 
     fetchCard(cardId);
-    // eslint-disable-next-line
+
   }, []);
 
-  // console.log("card", card);
+
 
   return card ? (
     <div className="page-card contained">
-      {/* <img className="hero-image" src={card.cover} alt={card.title} /> */}
       <Caroussel slides={slides} />
       <div className="page-card-second">
         <div className="flex top-row">
